@@ -1,0 +1,17 @@
+[package]
+name = "tmux-zj"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.70"
+description = "Zellij-style modal keybindings for tmux, with a status bar that can never get stuck"
+license = "MIT"
+repository = "https://github.com/Melon-cream/tmux-zj"
+readme = "README.md"
+keywords = ["tmux", "zellij", "keybindings", "modal", "statusline"]
+categories = ["command-line-utilities"]
+exclude = ["docker/", "e2e/"]
+
+[profile.release]
+lto = true
+strip = true
+opt-level = "z"
